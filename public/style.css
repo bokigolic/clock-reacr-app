@@ -1,3 +1,28 @@
-body{
-  background-color:antiquewhite;
+.analog-clock{
+
+
+ 
+}
+
+.krug{
+  position:relative;
+  width: 500px;
+  height:500px;
+  background-color: rgb(131, 125, 125);
+  margin:50px;
+  border-radius:50%;
+  box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
+  inset 4px 4px 10px rgba(0,0,0,0.5),
+  inset -4px -4px 10px rgba(67,67,67,0.5),
+  4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.pointer{
+  height: 250px;
+  width: 3px;
+  background-color: yellow;
+  position: absolute;
+  top: 0px;
+  left: 249px;
+
 }
