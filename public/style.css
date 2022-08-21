@@ -1,28 +1,30 @@
-.analog-clock{
-
-
- 
-}
-
-.krug{
-  position:relative;
+.analog-clock .krug {
+  position: relative;
   width: 500px;
-  height:500px;
-  background-color: rgb(131, 125, 125);
-  margin:50px;
-  border-radius:50%;
-  box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
-  inset 4px 4px 10px rgba(0,0,0,0.5),
-  inset -4px -4px 10px rgba(67,67,67,0.5),
-  4px 4px 10px rgba(0,0,0,0.3);
+  height: 500px;
+  background-color: rgb(236, 225, 225);
+  border: 7px solid #282828;
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+  inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+  inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  margin: 50px auto;
 }
 
-.pointer{
+.pointer-holder {
+  height: 500px;
+  width: 2px;
+
+  position: absolute;
+  top: 0px;
+  left: 249px;
+}
+
+.pointer {
   height: 250px;
   width: 3px;
   background-color: yellow;
   position: absolute;
   top: 0px;
-  left: 249px;
-
+  left: 0px;
 }
