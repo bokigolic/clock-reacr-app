@@ -14,10 +14,10 @@
 .pointer-holder {
   height: 500px;
   width: 2px;
-
   position: absolute;
   top: 0px;
   left: 249px;
+  transition: all 0s lenear;
 }
 
 .pointer {

@@ -4,12 +4,16 @@ let intervatId = false;
 
 
 const Clock = () => {
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(55);
 
   const angle = parseInt((seconds / 60) * 360);
 
   const tick = () => {
     setSeconds((oldState) => {
+      if (oldState === 59) {
+        return 0;
+      }
+
       return oldState + 1
     });
 
@@ -20,9 +24,7 @@ const Clock = () => {
 
     } else {
       intervatId =
-        setInterval(() => {
-          tick();
-        }, 1000);
+        setInterval(tick, 1000);
     }
   }, [tick, intervatId]);
 
