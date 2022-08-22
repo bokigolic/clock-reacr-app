@@ -28,3 +28,12 @@
   top: 0px;
   left: 0px;
 }
+
+.pointer2{
+  height: 250px;
+  width: 3px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
